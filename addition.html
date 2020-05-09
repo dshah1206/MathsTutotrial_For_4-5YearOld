@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ADDITION</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	body{
+  		background-color:#e00245 ;
+  background-image: url("images/donald_duck.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 200px 300px; 
+}
+.container-fluid{
+  margin-top: 13%;
+  margin-left: 10%;
+}
+.button {
+  background-color: #84ff00; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-left: 0;
+   margin-right: auto;
+   margin-bottom: 0;
+   margin-top: auto;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 15px 25px;
+  font-size: 44px;
+  font-weight: bolder;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button2 {
+  background-color: #00d0ff; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-left: 0;
+   margin-right: auto;
+   margin-bottom: 0;
+   margin-top: 81%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 15px 25px;
+  font-size: 50px;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button3{
+  background-color: #00d0ff; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-left: 0;
+   margin-right: 10px;
+   margin-bottom: 0;
+   margin-top: 81%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 0px 25px;
+  font-size: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button4 {
+  background-color: #84ff00; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-left: 0;
+   margin-right: auto;
+   margin-bottom: 0;
+   margin-top: 81%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 15px 25px;
+  font-size: 50px;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+</style>
+</head>
+<body> 
+  <div class="row">
+    <div class="col-sm-1"></div>
+  <div class="col-sm-2">
+    <p><a id="output" style="font-size: 100px; padding-left: 50px; padding-top: 60px; ">0</a></p>
+    <button class="button button1" onClick="Count()"><img src="images/lollipop.png" style="width: 100px; height: 100px; "></button>
+  </div>
+  <div class="col-sm-2">
+    <audio id='plus' src='sounds/plus.mp3'></audio>
+ <button class="button4"  onclick="add_number()" onmouseover="document.getElementById('plus').play()"><img src="images/plus.png" style="width: 100px; height: 100px; "></div>
+  <div class="col-sm-2">
+  <p><a id="output1" style="font-size: 100px; padding-left: 50px; padding-top: 60px;">0</a></p>
+    <button class="button button1" onClick="Count1()"><img src="images/lollipop.png" style="width: 100px; height: 100px; "></button>
+</div>
+<div class="col-sm-2">
+
+ <button class="button2"><img src="images/equalto.png" style="width: 100px; height: 100px; cursor: not-allowed; ">
+
+ </div>
+<div class="col-sm-2">
+  <h1><input class="button3" type="button" id="txtresult" style="width: 130px; height: 130px; "></h1>
+</div>
+
+<div class="col-sm-1">
+  
+</div>
+<script type="text/javascript">
+  var i = 0
+
+function Count() {
+    document.getElementById("output").innerHTML = i++ + 1;
+}
+console.log(i);   
+  var j = 0
+
+function Count1() {
+    document.getElementById("output1").innerHTML = j++ + 1;
+}
+console.log(j);   
+  function add_number() {
+
+            var result = i+ j;
+
+            document.getElementById("txtresult").value = result;
+        }
+      </script>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-4">
+    <button class="button button1" id="back">BACK</button>
+    <script type="text/javascript">
+    document.getElementById("back").onclick = function () {
+        location.href = "index.html";
+    };</script>
+  </div>
+    <div class="col-lg-4">
+    <button class="button button1" id="reset">RESET</button>
+    <script type="text/javascript">
+    document.getElementById("reset").onclick = function () {
+        location.href = "addition.html";
+    };</script>
+  </div>
+   <div class="col-lg-2"></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MATHS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	body{
+  		background-color:#e00245  ; /*#C70039*/
+  background-image: url("images/donald_duck.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 200px 300px; 
+}
+.wrapper{
+	display: inline;
+}
+.button {
+  background-color: #84ff00; /* Green#4CAF50 */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 0;
+   margin-top: 15%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 15px 25px;
+  font-size: 34px;
+  font-weight: bolder;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button2{
+
+}
+</style>
+</head>
+<body> 
+	<audio id="sound1" src="sounds/quack.mp3" preload="auto"></audio>
+  <h1><strong><button class="button button1" onclick="document.getElementById('sound1').play();">Hello and Welcome to Fun Maths Tutotial Kids!</button></strong></h1>
+  <div class="wrapper">
+  <button type="button" class="btn btn-info button1" style="background-color: #00d0ff; font-weight: bolder; cursor: not-allowed; color: black;font-size:34px; margin-left: 32% ;margin-right: auto;margin-bottom: 0;margin-top: 50px; "><h5>Click above for fun</h5></button>
+  <button type="button" class="btn btn-success button1" style="background-color:#84ff00 ;font-weight: bolder; color: black; margin-left: auto;margin-right: auto;margin-bottom: 0;margin-top: 50px;" id="myButton"><h5>Click here to Start Learning.</h5></button>
+  <script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "home.html";
+    };
+</script>
+  </div>
+
+</body>
+</html>
