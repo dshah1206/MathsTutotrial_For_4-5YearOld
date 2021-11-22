@@ -1,4 +1,4 @@
-# MathsTutotrial_For_4-5YearOld
+# HMI PROJECT: Maths Tutotrial for 4-5 year old infants.
 Aim: To design an interface that can teach mathematics to children of 4-5 years age.
 Theory:
 In this experiment, as we know, our direct users are going to be younger children in the age range of 4-5. Hence the platform should be completely compatible to the thinking process of such children and buttons should be intuitive to them. Let us evaluate our direct clients on the following criteria.
